@@ -1,0 +1,67 @@
+body{
+  width:100%;
+  height:100vh;
+  margin:0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+
+  background-image: url('https://cdn.oktra.co.uk/content/uploads/2020/10/21114758/Incubus-1-HighRes_2640x1980_acf_cropped-1-880x660.jpg');
+  background-size: cover;          /* Make image cover entire area */
+  background-position: center;     /* Center the image */
+  background-repeat: no-repeat;    /* Prevent tiling */
+  background-attachment: fixed;    /*
+  background fixed on scroll */
+}
+h1, p{
+  margin: 1em auto;
+  text-align: center;
+}
+form{
+  width: 60%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+
+  background-color: #1b1b32;
+  padding: 2em;
+  border-radius: 8px;
+}
+label{
+  display: block; /*make each label take a hole line*/
+  margin: 0.5rem 0;
+}
+form p {
+  text-align: left;
+}
+
+input, textarea, select{
+  margin:10px 0 0 0;/* space from label to input*/
+  width:100%; /* make input take a hole line*/
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+.inline {
+  width: unset; /*undo the previous width set*/
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;/*the text of label to be at the middle relative to the buttons*/
+}

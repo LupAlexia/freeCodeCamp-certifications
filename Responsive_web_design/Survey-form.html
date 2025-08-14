@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- link with the css file -->
+    <link rel="stylesheet" href="styles3.css"> 
+    <title>Survey form</title>
+  </head>
+  <body>
+    <h1 id="title">Workplace Wellness Survey</h1>
+    <p id="description"><i>Help us understand how to support your well-being in our company. Your responses are confidential and will guide future wellness initiatives.</i></p>
+
+    <!-- establish where to send your form to -->
+    <form id="survey-form" method="post"  action='https://register-demo.freecodecamp.org'>
+
+    <!-- text/number inputs -->
+    <label id="name-label" for="name">Full Name<input id="name" name="name" type="text" required placeholder="Enter your name"></label><br>
+    <label id="email-label" for="email">Email<input id="email" name="email" type="email" required placeholder="Enter your email"></label><br>
+    <label id="number-label" for="number">On a scale of 1–10, how would you rate your overall well-being at work?<input id="number" name="number" type="number" min="1" max="10" required placeholder="Enter number"></label><br>
+
+    <!-- select element -->
+    <label for="dropdown">Which department are you in?
+    <select id="dropdown">
+      <option value="">Choose one</option>
+      <option value="1">Human Resources</option>
+      <option value="2">Engineering</option>
+      <option value="3">Sales</option>
+      <option value="4">Marketing</option>
+    </select></label>
+
+    <!-- radio button input elements -->
+    <p>Do you feel supported by your manager?</p>
+    <label for="yes"><input id="yes" value="yes" type="radio" class="inline" name="support" checked> Yes</label>
+    <label for="no"><input id="no" value="no" type="radio" class="inline" name="support"> No</label>
+
+    <!-- checkbox input elemts -->
+    <p>Which wellness benefits that our firm offers do you enjoy most?</p>
+    <label for="gym"><input id="gym" type="checkbox" class="inline" value="gym"> Gym Membership</label>
+    <label for="therapy"><input id="therapy" type="checkbox" class="inline" value="therapy">
+    Counseling/Therapy</label>
+    <label for="schedule"><input id="schedule" type="checkbox" class="inline" value="schedule"> Flexible Schedule</label>
+
+    <!-- textarea element -->
+    <label for="suggestions">How could we improve the overall atmosphere in the workplace?  
+    <textarea id="suggestions" rows="3" cols="30" placeholder="Enter your suggestions here..."></textarea></label>
+
+    <!-- submit button element -->
+    <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>

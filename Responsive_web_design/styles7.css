@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;/include borders in the total size computing*/
+}
+
+body{
+  margin:0;
+  font-family: Arial;
+  line-height: 1.6;/*space between lines*/
+  display: flex;
+}
+
+#navbar{
+width: 250px;
+background-color: #CBE0BF;
+height: 100vh;/*the hole height of the window*/
+
+/*"stick" to the top-left corner of the screen permanently, like a sidebar that doesn't scroll with the rest of the page.*/
+position: fixed;
+left: 0;
+top: 0;
+
+padding-left: 1rem;
+overflow-y: auto;
+
+border-right: 2px solid #3A522D;
+}
+#navbar header {
+font-size: 1.5rem;
+margin-bottom: 1rem;
+
+border-bottom:1px solid #3A522D;
+box-sizing: border-box;
+}
+
+.nav-link {
+  display: block;/* elements displayed as stack*/
+  color: #3A522D;
+  text-decoration: none;/*remove underline of links*/
+  margin-bottom: 1rem;
+  width: 100%;
+
+  border-bottom:1px solid #3A522D;
+  box-sizing: border-box;
+}
+
+.nav-link:last-child{
+  border-bottom:none;
+}
+
+.nav-link:hover{
+  color:white;
+  text-decoration:underline;
+}
+
+#main-doc{
+  margin-left:260px;
+  padding:1rem;
+  flex-grow:1;/* flex container property - fill all remaining space after the fixed-width #navbar*/
+}
+
+header{
+  font-size:1.6rem;
+  font-weight:bold;
+  margin-bottom: 0.5rem;
+}
+h2{
+  font-size: 1.25rem;
+}
+code, pre{
+   background-color: #f4f4f4;
+   padding:0.2rem;
+   display: block;/*force code elements to stack vertically and span the full width, so they look like full-width blocks*/
+   overflow-x: auto;
+   border-radius: 4px;
+   margin-bottom: 0.2rem;
+}
+
+/* media query - make layout responsive to resize - activates only when the screen width is 768px or less*/
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;/*changes the layout direction to vertical — one below the other*/
+  }
+
+  #navbar {
+    position: relative;/*navbar now behaves like a normal element, and scrolls naturally with the page.*/
+    width: 100%;
+    height: auto;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
+

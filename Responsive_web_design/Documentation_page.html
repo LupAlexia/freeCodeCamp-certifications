@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Python documentation page"/>
+    <title>Documentation page</title>
+    <link rel="stylesheet" href="styles7.css">
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav id="navbar">
+      <header>Python documentation</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Comments">Comments</a>
+      <a class="nav-link" href="#Variables">Variables</a>
+      <a class="nav-link" href="#Data_types">Data types</a>
+      <a class="nav-link" href="#Numbers">Numbers</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <h2>What is Python?</h2>
+        <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+        <p>It is used for:</p>
+          <ul>
+          <li>web development (server-side)</li>
+          <li>software development</li>
+     <li>mathematics</li>
+          </ul>
+        <p>What can Python do?</p>
+        <ul>
+          <li>Python can be used on a server to create web applications.</li>
+          <li>Python can be used alongside software to create workflows.</li>
+          <li>Python can connect to database systems. It can also read and modify files.</li>
+        </ul>
+        <p>Why Python?</p>
+        <ul>
+          <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+          <li>Python has a simple syntax similar to the English language.</li>
+          <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+      </section>
+      <section class="main-section" id="Comments">
+        <header>Comments</header>
+        <h2>Creating a Comment</h2>
+        <p>Comments starts with a #, and Python will ignore them:</p>
+          <pre><code>
+#This is a comment
+print("Hello, World!")
+        </code></pre>
+        <p>Comments can be placed at the end of a line, and Python will ignore the rest of the line:</p>
+        <pre><code>
+print("Hello, World!") #This is a comment
+        </code></pre>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <h2>Creating Variables</h2>
+        <p>Python has no command for declaring a variable.</p>
+
+<p>A variable is created the moment you first assign a value to it.</p>
+<pre><code>
+x = 5
+y = "John"
+print(x)
+print(y)
+        </code></pre>
+      </section>
+<section class="main-section" id="Data_types">
+      <header>Data types</header>
+      <h2>Built-in Data Types</h2>
+      <p>Common data types in Python include:</p>
+      <ul>
+        <li>int</li>
+        <li>float</li>
+        <li>str</li>
+        <li>list</li>
+        <li>dict</li>
+      </ul>
+      <p>You can check the data type using the `type()` function:</p>
+      <pre><code>x = 5
+y = "John"
+print(type(x))
+print(type(y))</code></pre>
+      <p>Python supports complex and user-defined data types as well.</p>
+    </section>
+    <section class="main-section" id="Numbers">
+      <header>Numbers</header>
+      <p>Python has three numeric types:</p>
+      <ul>
+        <li>int – whole numbers</li>
+        <li>float – decimal numbers</li>
+        <li>complex – complex numbers</li>
+      </ul>
+      <p>Examples of numeric values:</p>
+      <pre><code>x = 1    # int
+y = 2.8  # float
+z = 1j   # complex</code></pre>
+    </section>
+    </main>
+  </body>
