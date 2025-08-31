@@ -1,0 +1,153 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+body {
+ font-family: "Poppins", "Helvetica Neue";
+  line-height: 1.6;
+  background-color: #f5f5dc;
+  color: #3e2723; 
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /*the way navbar and logo are arrranged*/
+  display: flex;
+  gap: 1.5rem;
+
+  width: 100%;
+  background-color: #3e2723;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+#header-img {
+  height: 40px;
+}
+#nav-bar {
+  /*the way navbar links are arrranged*/
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-link{
+  color:#f5f5dc;;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-link:hover{
+ text-decoration:underline;
+}
+
+#home {
+  margin-top: 80px; /* offset for fixed navbar */
+  text-align: center;
+  padding: 3rem 1rem;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+#about, #products, #subscription{
+  padding: 2rem;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#about iframe {
+  max-width: 100%;/*don't overflow if the width of the screen is smaller that he set width of the video*/
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+.blends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background-color: #3e2723;
+  color: #f5f5dc;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.card:hover {
+  transform: translateY(-5px);/*it moves a little bit upwards*/
+  background-color: #5d4037;
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+#form {
+  display: flex;
+  justify-content: center; /* centers the whole form horizontally */
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap; /* makes it wrap on small screens */
+}
+#email {
+  padding: 0.4rem;
+  width: 280px;
+  border: 2px solid #3e2723;
+  border-radius: 5px;
+}
+#submit {
+  padding: 0.4rem 1.2rem;
+  background-color: #3e2723;
+  color: #f5f5dc;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: #5d4037;
+}
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;/* navbar under logo*/
+    align-items: flex-start;
+  }
+
+  #nav-bar {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+}
